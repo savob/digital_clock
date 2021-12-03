@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name clock_ics)(type Legacy)(uri ${KIPRJMOD}/clock_ics.lib)(options "")(descr ""))
+  (lib (name 2172034-1)(type Legacy)(uri ${KIPRJMOD}/2172034-1/2172034-1.lib)(options "")(descr ""))
+)
