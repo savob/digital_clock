@@ -9,7 +9,7 @@ Designed in a modular system to allow easy reconfiguration and expirimentation w
 ### Small Notice
 In the original designs of the reset modules I either forgot or naively didn't bother to include decoupling capacitors for the ICs. This caused the system to be incredibly suseptible to any sort of electrostatic discharge in the surrendings and throwing off the time.
 
-This has been addressed in the newer versions of each.
+This has been addressed in the newer version.
 
 ## Display Module
 The main modules present; serve to house and drive two displays each as well as the counter for each digit. The digits are all standard LED seven-segment character displays and can be either common anode (CA) or common cathode (CC) types. The board can accomadate either by switching the driver chip used and a solder jumper accordingly. The left digit is referred to as the "primary" and the right one as "secondary".
