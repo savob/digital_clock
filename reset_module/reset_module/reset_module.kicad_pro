@@ -334,7 +334,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "display_module.kicad_pro",
+    "filename": "reset_module.kicad_pro",
     "version": 1
   },
   "net_settings": {
@@ -379,7 +379,7 @@
     "annotate_start_num": 0,
     "drawing": {
       "default_line_thickness": 6.0,
-      "default_text_size": 101.0,
+      "default_text_size": 50.0,
       "field_names": [],
       "intersheets_ref_own_page": false,
       "intersheets_ref_prefix": "",
@@ -415,7 +415,7 @@
   },
   "sheets": [
     [
-      "fd82f0f4-aa8c-4957-a4a3-5987fb3bd6bf",
+      "711599bb-a059-49cf-b6f8-9fe6b339a092",
       ""
     ]
   ],

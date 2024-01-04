@@ -6,6 +6,11 @@ Designed in a modular system to allow easy reconfiguration and expirimentation w
 2. Reset logic module - These recieve the data for a pair of digits and routes it through logic gates to determine if a digit needs to be reset (e.g. at 10)
 3. Signal generator module - This generates the base 1 Hz signal used by the clock and provides the power for all other modules
 
+### Small Notice
+In the original designs of the reset modules I either forgot or naively didn't bother to include decoupling capacitors for the ICs. This caused the system to be incredibly suseptible to any sort of electrostatic discharge in the surrendings and throwing off the time.
+
+This has been addressed in the newer versions of each.
+
 ## Display Module
 The main modules present; serve to house and drive two displays each as well as the counter for each digit. The digits are all standard LED seven-segment character displays and can be either common anode (CA) or common cathode (CC) types. The board can accomadate either by switching the driver chip used and a solder jumper accordingly. The left digit is referred to as the "primary" and the right one as "secondary".
 

@@ -1,5 +1,6 @@
 {
   "board": {
+    "3dviewports": [],
     "design_settings": {
       "defaults": {
         "board_outline_line_width": 0.09999999999999999,
@@ -49,15 +50,7 @@
         }
       },
       "diff_pair_dimensions": [],
-      "drc_exclusions": [
-        "courtyards_overlap|84319999|101070001|00000000-0000-0000-0000-000061a4b8f6|00000000-0000-0000-0000-000061a4b90d",
-        "courtyards_overlap|84319999|85830001|00000000-0000-0000-0000-000061a4b84c|00000000-0000-0000-0000-000061a4b863",
-        "courtyards_overlap|84319999|88370001|00000000-0000-0000-0000-000061a4b863|00000000-0000-0000-0000-000061a4b87a",
-        "courtyards_overlap|84319999|90910001|00000000-0000-0000-0000-000061a4b87a|00000000-0000-0000-0000-000061a4b891",
-        "courtyards_overlap|84319999|93450001|00000000-0000-0000-0000-000061a4b891|00000000-0000-0000-0000-000061a4b8a8",
-        "courtyards_overlap|84319999|95990001|00000000-0000-0000-0000-000061a4b8a8|00000000-0000-0000-0000-000061a4b8bf",
-        "courtyards_overlap|84319999|98530001|00000000-0000-0000-0000-000061a4b8bf|00000000-0000-0000-0000-000061a4b8f6"
-      ],
+      "drc_exclusions": [],
       "meta": {
         "filename": "board_design_settings.json",
         "version": 2
@@ -88,8 +81,8 @@
         "padstack": "error",
         "pth_inside_courtyard": "ignore",
         "shorting_items": "error",
-        "silk_over_copper": "ignore",
-        "silk_overlap": "ignore",
+        "silk_over_copper": "warning",
+        "silk_overlap": "warning",
         "skew_out_of_range": "error",
         "through_hole_pad_without_hole": "error",
         "too_many_vias": "error",
@@ -124,7 +117,8 @@
       "zones_allow_external_fillets": false,
       "zones_use_no_outline": true
     },
-    "layer_presets": []
+    "layer_presets": [],
+    "viewports": []
   },
   "boards": [],
   "cvpcb": {
@@ -308,18 +302,23 @@
     "rule_severities": {
       "bus_definition_conflict": "error",
       "bus_entry_needed": "error",
-      "bus_label_syntax": "error",
       "bus_to_bus_conflict": "error",
       "bus_to_net_conflict": "error",
+      "conflicting_netclasses": "error",
       "different_unit_footprint": "error",
       "different_unit_net": "error",
       "duplicate_reference": "error",
       "duplicate_sheet_names": "error",
+      "endpoint_off_grid": "warning",
       "extra_units": "error",
       "global_label_dangling": "warning",
       "hier_label_mismatch": "error",
       "label_dangling": "error",
       "lib_symbol_issues": "warning",
+      "missing_bidi_pin": "warning",
+      "missing_input_pin": "warning",
+      "missing_power_pin": "error",
+      "missing_unit": "warning",
       "multiple_net_names": "warning",
       "net_not_bus_member": "warning",
       "no_connect_connected": "warning",
@@ -329,6 +328,7 @@
       "pin_to_pin": "warning",
       "power_pin_not_driven": "error",
       "similar_labels": "warning",
+      "simulation_model_issue": "ignore",
       "unannotated": "error",
       "unit_value_mismatch": "error",
       "unresolved_variable": "error",
@@ -340,13 +340,13 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "reset_module_v2.kicad_pro",
+    "filename": "reset_module_v3.kicad_pro",
     "version": 1
   },
   "net_settings": {
     "classes": [
       {
-        "bus_width": 12.0,
+        "bus_width": 12,
         "clearance": 0.2,
         "diff_pair_gap": 0.25,
         "diff_pair_via_gap": 0.25,
@@ -360,13 +360,15 @@
         "track_width": 0.25,
         "via_diameter": 0.8,
         "via_drill": 0.4,
-        "wire_width": 6.0
+        "wire_width": 6
       }
     ],
     "meta": {
-      "version": 2
+      "version": 3
     },
-    "net_colors": null
+    "net_colors": null,
+    "netclass_assignments": null,
+    "netclass_patterns": []
   },
   "pcbnew": {
     "last_paths": {
@@ -382,6 +384,8 @@
   "schematic": {
     "annotate_start_num": 0,
     "drawing": {
+      "dashed_lines_dash_length_ratio": 12.0,
+      "dashed_lines_gap_length_ratio": 3.0,
       "default_line_thickness": 6.0,
       "default_text_size": 50.0,
       "field_names": [],
@@ -410,10 +414,14 @@
       "model_mode": 0,
       "workbook_filename": ""
     },
-    "page_layout_descr_file": "/home/savo/Documents/KiCAD Circuits/small_title_block.kicad_wks",
+    "page_layout_descr_file": "",
     "plot_directory": "./",
     "spice_adjust_passive_values": false,
+    "spice_current_sheet_as_root": false,
     "spice_external_command": "spice \"%I\"",
+    "spice_model_current_sheet_as_root": true,
+    "spice_save_all_currents": false,
+    "spice_save_all_voltages": false,
     "subpart_first_id": 65,
     "subpart_id_separator": 0
   },

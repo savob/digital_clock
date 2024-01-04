@@ -50,7 +50,15 @@
         }
       },
       "diff_pair_dimensions": [],
-      "drc_exclusions": [],
+      "drc_exclusions": [
+        "courtyards_overlap|84319999|101070001|00000000-0000-0000-0000-000061a4b8f6|00000000-0000-0000-0000-000061a4b90d",
+        "courtyards_overlap|84319999|85830001|00000000-0000-0000-0000-000061a4b84c|00000000-0000-0000-0000-000061a4b863",
+        "courtyards_overlap|84319999|88370001|00000000-0000-0000-0000-000061a4b863|00000000-0000-0000-0000-000061a4b87a",
+        "courtyards_overlap|84319999|90910001|00000000-0000-0000-0000-000061a4b87a|00000000-0000-0000-0000-000061a4b891",
+        "courtyards_overlap|84319999|93450001|00000000-0000-0000-0000-000061a4b891|00000000-0000-0000-0000-000061a4b8a8",
+        "courtyards_overlap|84319999|95990001|00000000-0000-0000-0000-000061a4b8a8|00000000-0000-0000-0000-000061a4b8bf",
+        "courtyards_overlap|84319999|98530001|00000000-0000-0000-0000-000061a4b8bf|00000000-0000-0000-0000-000061a4b8f6"
+      ],
       "meta": {
         "filename": "board_design_settings.json",
         "version": 2
@@ -81,8 +89,8 @@
         "padstack": "error",
         "pth_inside_courtyard": "ignore",
         "shorting_items": "error",
-        "silk_over_copper": "warning",
-        "silk_overlap": "warning",
+        "silk_over_copper": "ignore",
+        "silk_overlap": "ignore",
         "skew_out_of_range": "error",
         "through_hole_pad_without_hole": "error",
         "too_many_vias": "error",
@@ -334,7 +342,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "display_module.kicad_pro",
+    "filename": "reset_module_v2.kicad_pro",
     "version": 1
   },
   "net_settings": {
@@ -379,7 +387,7 @@
     "annotate_start_num": 0,
     "drawing": {
       "default_line_thickness": 6.0,
-      "default_text_size": 101.0,
+      "default_text_size": 50.0,
       "field_names": [],
       "intersheets_ref_own_page": false,
       "intersheets_ref_prefix": "",
@@ -415,7 +423,7 @@
   },
   "sheets": [
     [
-      "fd82f0f4-aa8c-4957-a4a3-5987fb3bd6bf",
+      "711599bb-a059-49cf-b6f8-9fe6b339a092",
       ""
     ]
   ],
