@@ -28,4 +28,4 @@ This module serves two purposes: primarily to generate the required 1 Hz base cl
 The 1 Hz signal is generated using a CD4060 chip driving a 32.768 kHz crystal and dividing down the signal by a factor of 256 to 128 Hz, which is fed into another CD4060 and divided down further by a factor of 128 to produce a steady 1 Hz that is fed into the clock.
 
 ### Software Used
-KiCAD EDA 6.0.1 was used to design all the schematics and boards.
+KiCad EDA 6.0.1 was originally used to design all the schematics and boards. It has since been updated to KiCad 7.0.10.
